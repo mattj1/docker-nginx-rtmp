@@ -1,3 +1,18 @@
+## Notes
+
+- Added stunnel in order to stream to Facebook
+- Copy nginx-template.conf to nginx.conf. Note where the stream URLs/keys must be added.
+
+# References
+
+https://gist.github.com/mikoim/4f85ba63f7b416d71fad4a14bc4068d0
+https://github.com/alfg/docker-nginx-rtmp
+https://github.com/arut/nginx-rtmp-module/issues/629
+https://dev.to/lax/rtmps-relay-with-stunnel-12d3
+https://github.com/EasyPi/docker-stunnel
+
+
+
 # docker-nginx-rtmp
 A Dockerfile installing NGINX, nginx-rtmp-module and FFmpeg from source with
 default settings for HLS live streaming. Built on Alpine Linux.

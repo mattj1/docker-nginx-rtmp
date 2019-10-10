@@ -9,3 +9,16 @@ services:
       - 8443:443
     volumes:
       - ./certs:/opt/certs
+    depends_on:
+      - stunnel
+  
+  stunnel:
+    build:
+      context: .
+      dockerfile: ./stunnel/Dockerfile
+    restart: always
+    volumes:
+      - ./stunnel:/etc/stunnel
+      - ./stunnel/stunnel.conf:/etc/stunnel/stunnel.conf
+    ports:
+      - "19350:19350"
