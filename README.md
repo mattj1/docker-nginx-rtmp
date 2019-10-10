@@ -3,6 +3,12 @@
 - Added stunnel in order to stream to Facebook
 - Copy nginx-template.conf to nginx.conf. Note where the stream URLs/keys must be added.
 
+To use:
+```
+docker-compose build
+docker-compose up
+```
+
 # References
 
 https://gist.github.com/mikoim/4f85ba63f7b416d71fad4a14bc4068d0
